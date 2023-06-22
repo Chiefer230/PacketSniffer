@@ -12,7 +12,7 @@ class IP:
         self.sourceAddress = ipaddress.ip_address(self.sourceIP)
         self.destinationAddress = ipaddress.ip_address(self.destinationIP)
 
-host = '192.168.1.165'
+host = '0.0.0.0' #Insert Host IP
 s = socket.socket(socket.AF_INET,socket.SOCK_RAW,socket.IPPROTO_IP)
 s.bind((host,0))
 while True:
